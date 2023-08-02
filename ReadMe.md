@@ -242,3 +242,9 @@ with body:
     "returnSecureToken":true
 }
 ```
+
+
+```
+var jsonData = JSON.parse(responseBody);
+pm.globals.set('idToken', jsonData.idToken)
+```
